@@ -1,0 +1,83 @@
+/* Paradise Nursery - App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Landing page with background image.
+   Put your image in the public folder as public/landing-bg.jpg */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('/landing-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-content {
+  max-width: 640px;
+  padding: 24px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin: 0 0 12px;
+}
+
+.landing-content p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.get-started-button {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  background-color: #1b5e20;
+}
+
+.get-started-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .landing-content h1 {
+    font-size: 2rem;
+  }
+}
